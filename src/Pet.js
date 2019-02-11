@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "@reach/router";
-import { navigate } from "@reach/router";
 
 class Pet extends React.Component {
   render() {

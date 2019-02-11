@@ -1,6 +1,5 @@
 import React from "react";
 import pf from "petfinder-client";
-import { navigate } from "@reach/router";
 
 const petfinder = pf({
   key: process.env.API_KEY,
@@ -8,11 +7,9 @@ const petfinder = pf({
 });
 
 class Details extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { loading: true };
-  }
+  state = {
+    loading: true
+  };
   componentDidMount() {
     petfinder.pet
       .get({
