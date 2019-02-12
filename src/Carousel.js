@@ -14,7 +14,25 @@ class Carousel extends React.Component {
 
     return { photos };
   }
-  render() {}
+  render() {
+    const { photos, active } = this.state;
+
+    return (
+      <div className="carousel">
+        <img src={photos[active].value} alt="primary animal" />
+        <div className="carousel-smaller">
+          {photos.map((photo, index) => (
+            <img
+              key={photo.value}
+              src={photo.value}
+              className={index === active ? "active" : ""}
+              alt="animal thumbnail"
+            />
+          ))}
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Carousel;
