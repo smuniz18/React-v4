@@ -1,7 +1,7 @@
 import React from "react";
 import SearchBox from "./SearchBox";
 
-class SearchParams extends React.Component {
+class Search extends React.Component {
   render() {
     return (
       <div className="search-route">
@@ -11,4 +11,4 @@ class SearchParams extends React.Component {
   }
 }
 
-export default SearchParams;
+export default Search;
