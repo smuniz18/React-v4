@@ -28537,7 +28537,7 @@ function (_React$Component) {
 
     return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_getPrototypeOf2 = _getPrototypeOf(Details)).call.apply(_getPrototypeOf2, [this].concat(args))), _this.state = {
       loading: true,
-      showModal: true
+      showModal: false
     }, _this.toggleModal = function () {
       return _this.setState({
         showModal: !_this.state.showModal
@@ -28844,7 +28844,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59315" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59623" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
